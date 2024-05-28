@@ -1,26 +1,25 @@
-import { VStack, Text, ScrollView, Avatar, Divider } from "native-base";
-import { Titulo } from '../componentes/titulo'
+import { VStack, Text, ScrollView, Avatar, Divider } from 'native-base'
+import { Titulo } from '../componentes/Titulo'
 
-export default function Perfil() {
-    return (
-        <ScrollView flex={1}>
-            <VStack flex={1} alignItems="center" p={5}>
+export default function Perfil(){
+  return(
+    <ScrollView flex={1}>
+      <VStack flex={1} alignItems="center" p={5}>
+        <Titulo color="blue.500">Meu Perfil</Titulo>
 
-                <Titulo color="blue.500">Informações Pessoais</Titulo>
-                <Avatar size="xl" source={{ uri: "https://avatars.githubusercontent.com/u/102029668?v=4" }}></Avatar>
+        <Avatar size="xl" source={{ uri: "https://github.com/robertoSRMJunior.png" }} mt={5} />
 
-            <Text>Meu Perfil</Text>
-            <Avatar source={{ uri: 'https://avatars.githubusercontent.com/u/102029668?v=4' }} mt={5} />
-            <Titulo>Ana Luísa</Titulo>
-            <Titulo>19/04/2006</Titulo>
-            <Titulo>Votuporanga / SP</Titulo>
-            <Divider mt={5} />
+        <Titulo color="blue.500">Informações pessoais</Titulo>
+        <Titulo fontSize="lg" mb={1}>Roberto Moraes</Titulo>
+        <Text>01/04/1988</Text>
+        <Text>São Paulo</Text>
 
-            <Titulo>Historico Médico</Titulo>
-            <Text fontSize={18}>Bronquite</Text>
-            <Text fontSize={18}>Sinusite</Text>
+        <Divider mt={5} />
 
-        </VStack>
-        </ScrollView>
-    )
+        <Titulo color="blue.500" mb={1}>Histórico médico</Titulo>
+        <Text>Bronquite</Text>
+        <Text>Sinusite</Text>
+      </VStack>
+    </ScrollView>
+  )
 }
