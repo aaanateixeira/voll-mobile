@@ -35,7 +35,6 @@ export default function Agendamento({ route, navigation }: any) {
             placeholder="Digite a data"
             onChangeText={setData}
             />
-
             <Botao onPress={agendar}>
                 Agendar
             </Botao>
